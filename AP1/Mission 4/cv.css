@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    border: 5px solid black; 
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid #00ff62;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+
+.photo {
+    flex: 0 0 auto; 
+    margin-right: 20px;
+}
+
+.photo img {
+    border-radius: 50%;
+    border: 5px solid #00a2ff;
+    max-width: 150px; 
+    height: auto;
+}
+
+
+.info-personnelle {
+    flex: 1; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-personnelle h1 {
+    margin: 0;
+    color: #000000;
+}
+
+header p {
+    margin: 5px 0;
+    color: #000000;
+}
+
+section h2 {
+    border-bottom: 2px solid #000000;
+    padding-bottom: 5px;
+    color: #000000;
+    margin-bottom: 20px; 
+}
+
+.float-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2%; 
+}
+
+.float-child {
+    flex: 1 1 48%; 
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Boîte générale */
+.box {
+    background-color: #00ff80;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    border: 5px solid black;
+    box-sizing: border-box; 
+
+.sous-tache {
+    background-color: #00ff80;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #00ff80;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    border: 5px solid black;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+li {
+    margin-bottom: 10px; 
+    color: #000000; 
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
