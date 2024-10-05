@@ -3,155 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Curriculum Vitae</title>
+    <title>CV Vijayaseelan Kanikathir</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f0f0;
             padding: 20px;
-            background-color: #b3ff02;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .profile-pic-container {
-            float: left;
-            width: 150px;
-            height: 150px;
-            margin-right: 20px;
-            overflow: hidden;
-            border: 2px solid #000000; 
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
-        }
-        .profile-pic-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; 
         }
 
         .container {
-            overflow: auto; 
+            width: 70%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        .left {
-            float: left;
-            width: 65%;
-            padding: 15px;
-            background-color: #00fff2;
-            margin-right: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-        .right {
-            float: right;
-            width: 30%;
-            background-color: #ff00ea; 
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #000000;
-        }
-        .block {
+
+        /* Section en-tête (photo + informations) */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            border: 2px solid #FF0000;
+            padding: 10px;
             margin-bottom: 20px;
-            padding: 15px;
+            background-color: #F9E79F;
+        }
+
+        .header .info {
+            width: 70%;
+        }
+
+        .header .info h1 {
+            font-size: 24px;
+            color: #000;
+        }
+
+        .header .info p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .header .photo {
+            width: 20%;
+        }
+
+        .header .photo img {
+            width: 100%;
             border-radius: 5px;
-            background-color: rgb(157, 255, 0);
-            box-shadow: 0 0 5px rgb(255, 0, 0);
+            border: 2px solid #000;
         }
-        footer {
-            clear: both;
+
+        /* Section Titre */
+        .section-title {
+            border: 2px solid #000;
+            background-color: #FF6600;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 18px;
             text-align: center;
-            margin-top: 20px;
         }
+
+        /* Contenu de chaque section */
+        .content {
+            border: 2px solid #008000;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .block {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .block .date {
+            width: 30%;
+            background-color: #ddd;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+
+        .block .info {
+            width: 65%;
+            background-color: #eee;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+
+        /* Pour les sections "Langues" et "Compétences Informatiques" */
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .skills-table th, .skills-table td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* Alignement du texte à l'intérieur des blocs */
+        .block p, .block h3 {
+            margin: 0;
+        }
+
+        /* Retour à la section du haut */
+        a {
+            display: block;
+            text-align: center;
+            color: #007BFF;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
     </style>
 </head>
 <body>
-    <header>
-        <div class="profile-pic-container">
-            <img src="isagi.jpg" alt="Photo de profil">
-        </div>
-        <h1 style="color: #000000;"> Vijayaseelan Kanikathir</h1>
-        <p>Email: kanikathir.pro@gmail.com | Téléphone: +33 7 66 66 48 38</p>
-        <p>Adresse: 92140 CLAMART, France</p>
-    </header>
-    
+
     <div class="container">
-        <div class="left">
-            <div class="block" style="background-color: #ff0000;"> 
-                <h2>Profil</h2>
-                <p>Étudiant en BTS Services Informatiques aux Organisations (SIO) au lycée Parc de Vilgénis</p>
+        <div class="header">
+            <div class="info">
+                <h1>Vijayaseelan Kanikathir</h1>
+                <p>Né le 06 janvier 2006</p>
+                <p>92140 CLAMART, France</p>
+                <p>Email: kanikathir.pro@gmail.com | Téléphone: +33 7 66 66 48 38</p>
             </div>
-
-            <div class="block" style="background-color: #ff3c00;"> 
-                <h2>Expérience Professionnelle</h2>
-                <h3>STAGE DE DEVELOPPEMENT WEB - AR TRANSFERT</h3>
-                <p>Dates : 11/2023-01/2024</p>
-                <ul>
-                    <li>Conception du site Web</li>
-                    <li>Création de site Web WordPress</li>
-                    <li>Développement Front-End</li>
-                    <li>Développement Back-End</li>
-                    <li>Maintenance et Mise à jour</li>
-                </ul>
-
-                <h3>STAGE DE MAINTENANCE INFORMATIQUE</h3>
-                <p>Dates : 01/2023-03/2023</p>
-                <ul>
-                    <li>Installation paramétrage et mise en service de sysème</li>
-                    <li>Acceuillir la clientèle et orienter dans leurs demande</li>
-                    <li>Diagnostic des dysfonctionenements des installations</li>
-                    <li>Réparation des appareils électroniques</li>
-                </ul>
-                <h4>STAGE D'INFORMATIQUE POLYVALENT</h4>
-                <p>Dates : 04/2022-05/2022</p>
-                <ul>
-                    <li>Conseil dans l'achat</li>
-                    <li>Gérer les stocks</li>
-                    <li>Encaisser les clients</li>
-                    <li>Acceuil et orientation du service</li>
-                    <li>Gestion centrale de postes de cyber-café</li>
-                </ul>
-            </div>
-
-            <div class="block" style="background-color: #1100ff;">
-                <h2>Éducation</h2>
-                <h3>Diplôme - Établissement</h3>
-                <p>09/2024-06/2026</p>
-                <p>Préparation d'un BTS Service Informatique Organisations (SIO)</p>
-                <p>09/2022-07/2024</p>
-                <p>Obtention du Baccalauréat Professionnelle Mention Bien</p>
-                <p>09/2022</p>
-                <p>Niveau 1 obtenu en Cisco Networking Academy in Cybersecurity</p>
+            <div class="photo">
+                <img src="isagi.jpg" alt="Photo de Kanikathir">
             </div>
         </div>
 
-        <div class="right">
-            <div class="block" style="background-color: #90ee90;"> 
-                <h2>Compétences</h2>
-                <ul>
-                    <li>CHANGEMENT DE COMPOSANTS DES EQUIPEMENTS ELECTRONIQUESS</li>
-                    <li>INSTALLATION DE LOGICIEL ET UPDATE LE SYSTEME</li>
-                    <li>GESTION CLIENTELE</li>
-                    <li>GESTION DES SERVEUR ET SYSTEME D'EXPLOITATION</li>
-                    <li>CONFIGURATION DES RESEAUX</li>
-                </ul>
+        <div class="section-title">Formation</div>
+        <div class="content">
+            <div class="block">
+                <div class="date">09/2024-06/2026</div>
+                <div class="info">
+                    <h3>BTS Services Informatiques aux Organisations</h3>
+                    <p>Lycée Parc de Vilgénis, préparation d'un BTS en informatique.</p>
+                </div>
             </div>
+            <div class="block">
+                <div class="date">09/2022-07/2024</div>
+                <div class="info">
+                    <h3>Baccalauréat Professionnel</h3>
+                    <p>Obtention du baccalauréat professionnel en informatique avec Mention Bien.</p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="date">09/2022</div>
+                <div class="info">
+                    <h3>Cisco Networking Academy</h3>
+                    <p>Niveau 1 obtenu en Cybersecurity Essentials.</p>
+                </div>
+            </div>
+        </div>
 
-            <div class="block" style="background-color: #a51f33;"> 
-                <ul>
-                    <li>Français</li>
-                    <li>Anglais</li>
-                    <li>Tamoul</li>
-                </ul>
+        <div class="section-title">Expériences Professionnelles</div>
+        <div class="content">
+            <div class="block">
+                <div class="date">11/2023-01/2024</div>
+                <div class="info">
+                    <h3>STAGE DE DÉVELOPPEMENT WEB - AR TRANSFERT</h3>
+                    <ul>
+                        <li>Conception du site Web</li>
+                        <li>Création de sites Web WordPress</li>
+                        <li>Développement Front-End et Back-End</li>
+                        <li>Maintenance et mise à jour</li>
+                    </ul>
+                </div>
             </div>
+            <div class="block">
+                <div class="date">01/2023-03/2023</div>
+                <div class="info">
+                    <h3>STAGE DE MAINTENANCE INFORMATIQUE</h3>
+                    <ul>
+                        <li>Installation, paramétrage, et mise en service des systèmes</li>
+                        <li>Assistance et orientation des clients</li>
+                        <li>Diagnostic des dysfonctionnements des installations</li>
+                        <li>Réparation des appareils électroniques</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block">
+                <div class="date">04/2022-05/2022</div>
+                <div class="info">
+                    <h3>STAGE D'INFORMATIQUE POLYVALENT</h3>
+                    <ul>
+                        <li>Conseil sur l'achat de matériel informatique</li>
+                        <li>Gestion des stocks et encaissement</li>
+                        <li>Supervision du cyber-café et assistance aux clients</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-title">Compétences</div>
+        <div class="content">
+            <table class="skills-table">
+                <tr>
+                    <th>Compétences Techniques</th>
+                    <td>
+                        <ul>
+                            <li>CHANGEMENT DE COMPOSANTS DES EQUIPEMENTS ÉLECTRONIQUES</li>
+                            <li>INSTALLATION DE LOGICIELS ET MISES À JOUR SYSTÈME</li>
+                            <li>GESTION DES SERVEURS ET DES SYSTÈMES D'EXPLOITATION</li>
+                            <li>CONFIGURATION DES RÉSEAUX</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Langues</th>
+                    <td>Français, Anglais, Tamoul</td>
+                </tr>
+            </table>
         </div>
     </div>
-    
+
     <footer>
         <p>Pied de page</p>
+        <a href="Sommaire.html">Retour au Sommaire</a>
     </footer>
+
 </body>
 </html>
