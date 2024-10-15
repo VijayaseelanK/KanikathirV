@@ -107,6 +107,12 @@
             margin: 30px auto;
         }
 
+        .scrollable-list {
+            max-height: 300px; /* Hauteur fixe pour permettre le défilement */
+            overflow-y: auto; /* Activer le défilement vertical */
+            padding-right: 10px; /* Espace pour éviter le chevauchement avec la barre de défilement */
+        }
+
         @media (max-width: 768px) {
             .container {
                 flex-direction: column;
@@ -130,6 +136,10 @@
                 font-size: 1.2em;
                 padding: 10px 20px;
             }
+
+            .scrollable-list {
+                max-height: 200px; /* Réduire la hauteur pour les petits écrans */
+            }
         }
     </style>
 </head>
@@ -151,22 +161,25 @@
             <p style="text-align:center;">Bienvenue sur mon portfolio ! Ici, vous trouverez mes différents travaux et projets réalisés dans le cadre de mes études. N'hésitez pas à explorer les liens ci-dessous.</p>
         </section>
 
-        <!-- Section Liens -->
+        <!-- Section Liens avec défilement -->
         <section>
             <h2>Sommaire</h2>
-            <ul>
-                <li><a href="TP1/indexx.html">TP1</a></li>
-                <li><a href="TP2/sommaire.html">TP2 Non noté</a></li>
-                <li><a href="TP3/formulaire.html">TP3</a></li>
-                <li><a href="TP4/index.html">TP4</a></li>
-                <li><a href="AP1/Mission 1/Présentationsdesmétiers.html">Mission 1</a></li>
-                <li><a href="AP1/Mission 2/Mission2.html">Mission 2</a></li>
-                <li><a href="AP1/Mission 3/Mission3.html">Mission 3</a></li>
-                <li><a href="AP1/Mission 4/Sommaire.html">Mission 4</a></li>
-                <li><a href="AP1/Mission 5/index.html">Mission 5</a></li>
-            </ul>
+            <div class="scrollable-list">
+                <ul>
+                    <li><a href="TP1/indexx.html">TP1</a></li>
+                    <li><a href="TP2/sommaire.html">TP2 Non noté</a></li>
+                    <li><a href="TP3/formulaire.html">TP3</a></li>
+                    <li><a href="TP4/index.html">TP4</a></li>
+                    <li><a href="AP1/Mission 1/Présentationsdesmétiers.html">Mission 1</a></li>
+                    <li><a href="AP1/Mission 2/Mission2.html">Mission 2</a></li>
+                    <li><a href="AP1/Mission 3/Mission3.html">Mission 3</a></li>
+                    <li><a href="AP1/Mission 4/Sommaire.html">Mission 4</a></li>
+                    <li><a href="AP1/Mission 5/index.html">Mission 5</a></li>
+                </ul>
+            </div>
         </section>
     </div>
 </body>
 
 </html>
+
