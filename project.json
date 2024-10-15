@@ -1,0 +1,25 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "𝙶𝚘𝚓𝚘 𝚟𝚜 𝚂𝚞𝚔𝚞𝚗𝚊 𝙼𝚊𝚗𝚐𝚊 4𝚔",
+	"file" : "1125 (3).mp4",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"ratingsex" : "none",
+	"ratingviolence" : "none",
+	"tags" : [ "Anime" ],
+	"title" : "𝖦𝗈𝗃𝗈 𝗏𝗌 𝖲𝗎𝗄𝗎𝗇𝖺 4𝖪",
+	"type" : "video",
+	"version" : 0
+}
