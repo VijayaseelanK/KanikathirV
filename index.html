@@ -32,7 +32,7 @@
             text-align: center;
         }
 
-        .image-background {
+        .video-background {
             position: absolute;
             top: 0;
             left: 0;
@@ -42,7 +42,7 @@
             overflow: hidden;
         }
 
-        .image-background img {
+        .video-background video {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -170,8 +170,11 @@
 </head>
 
 <body>
-    <div class="image-background">
-        <img src="preview.jpg" alt="Cyberpunk Background">
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="İsimsiz video ‐ Clipchamp ile yapıldı (3).mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
     </div>
 
     <div class="container">
